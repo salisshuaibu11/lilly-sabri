@@ -2,6 +2,8 @@ import React from "react";
 import { UserCircleIcon } from "@heroicons/react/outline";
 import "./Main.css";
 
+import { data } from "../../data.js";
+
 const Main = () => {
   return (
     <main className="main flex justify-center">
@@ -52,7 +54,31 @@ const Main = () => {
           </div>
         </div>
       </article>
-      <div className="main__bottom">main__bottom</div>
+      <div className="main__bottom">
+        <section>
+          {data.map((item) => {
+            const { id, name, description, url } = item;
+
+            return (
+              <div className="mb-5" key={id} style={{ width: "100%" }}>
+                <div className="mb-4">
+                  <UserCircleIcon width={25} /> {name}
+                </div>
+                <div className="description">
+                  <a target="__blank" href={url}>
+                    {description}
+                  </a>
+                  <UserCircleIcon
+                    className="clone-icon"
+                    width={25}
+                    style={{ marginLeft: "5rem" }}
+                  />
+                </div>
+              </div>
+            );
+          })}
+        </section>
+      </div>
     </main>
   );
 };
