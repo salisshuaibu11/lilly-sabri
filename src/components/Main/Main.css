@@ -76,6 +76,14 @@
 
 .main__bottom .description .clone-icon {
   position: absolute;
-  top: 1.5rem;
+  top: 1.7rem;
   left: 18rem;
+  color: rgba(64, 224, 208, 100);
+  fill: currentColor;
+  cursor: pointer;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
