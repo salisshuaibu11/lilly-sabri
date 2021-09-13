@@ -21,6 +21,36 @@ const Main = () => {
             style={{ marginLeft: "5rem" }}
           />
         </a>
+        <div className="main__subscribe" style={{ marginTop: "2.5rem" }}>
+          <div className="main__subscribe__top">
+            <UserCircleIcon width={25} /> Over 500 FREE Home Workouts
+          </div>
+          <div className="main__subscribe__bottom">
+            <div className="main__subscribe__bottom__left">
+              <img
+                className="rounded-circle"
+                style={{ width: "5rem", height: "5rem" }}
+                src="/images/subscribeImage.jpg"
+                alt="A lady smiling"
+              />
+            </div>
+            <div className="main__subscribe__bottom__right">
+              <h2>Lilly Sabri</h2>
+              <p>
+                I’m Lilly Sabri, founder of Lean with Lilly. I’ve been a
+                Chartered...
+              </p>
+              <a
+                style={{ backgroundColor: "rgb(255, 0, 0)" }}
+                target="__blank"
+                className="subscribe"
+                href="https://www.youtube.com/channel/UCTsM1dSAiXqiV5oZjuNw_Bg?sub_confirmation=1"
+              >
+                Subscribe
+              </a>
+            </div>
+          </div>
+        </div>
       </article>
       <div className="main__bottom">main__bottom</div>
     </main>

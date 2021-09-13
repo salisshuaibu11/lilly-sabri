@@ -15,7 +15,7 @@
   margin-bottom: 1.2rem;
 }
 
-.main a {
+.main__header > a {
   margin: 1rem 0;
   background: rgb(241, 242, 246);
   text-transform: uppercase;
@@ -23,4 +23,33 @@
   color: inherit;
   border-radius: 8px;
   padding: 1rem 2rem;
+}
+
+.main__subscribe__bottom {
+  background: linear-gradient(0deg, rgb(40, 40, 40) 0%, rgb(79, 79, 79) 100%);
+  padding: 24px;
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  width: 27rem;
+}
+
+.main__subscribe__bottom__left {
+  margin-right: 2rem;
+}
+
+.main__subscribe__bottom__right {
+  color: white;
+}
+
+.main__subscribe__bottom__right p {
+  margin: 1rem 0;
+}
+
+.main__subscribe__bottom__right .subscribe {
+  text-decoration: none;
+  color: white;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
 }
